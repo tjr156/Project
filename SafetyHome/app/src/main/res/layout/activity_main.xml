@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gps.kms.safetyhome.MainActivity">
+
+
+
+    <fragment
+
+        android:id="@+id/map"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+        class="com.google.android.gms.maps.MapFragment" />
+
+    <Button
+        android:id="@+id/btn_callHelp"
+        android:layout_width="50dp"
+        android:background="@drawable/help"
+        android:layout_height="50dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="420dp"
+        />
+
+    <Button
+        android:id="@+id/btn_sms"
+        android:layout_width="50dp"
+        android:background="@drawable/sms"
+        android:layout_height="50dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="480dp"
+        />
+
+    <Button
+        android:id="@+id/btn_record"
+        android:layout_width="50dp"
+        android:background="@drawable/record"
+        android:layout_height="50dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="360dp"
+        />
+
+
+
+</RelativeLayout>
