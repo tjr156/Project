@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabhost"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="-27dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            >
+            <TabWidget
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs">
+
+            </TabWidget>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@android:id/tabcontent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Temp"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2">
+
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/i_temp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="TEMPERATURE"
+                                android:textSize="40dp"
+                                android:layout_gravity="center"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txt_temp"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="3"
+                                android:gravity="right"
+                                android:text="TEMPERATURE"
+                                android:textSize="30dp" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:text="℃"
+                                android:textSize="30dp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView3"
+                                android:layout_weight="3"
+                                android:gravity="right"
+                                android:layout_marginRight="15dp"
+                                android:text="희망 온도 : "
+                                android:textSize="20dp" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/w_temp"
+                                    android:layout_width="0dp"
+                                    android:gravity="left"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:text="wishtemp"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:gravity="left"
+                                    android:layout_weight="2"
+                                    android:layout_height="wrap_content"
+                                    android:text="℃"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp" />
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:id="@+id/img_result1"/>
+
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:layout_height="match_parent"
+                                android:id="@+id/txt_result1"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="20dp"
+                                android:text="결과"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/Humi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2">
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/i_humi" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="HUMIDITY"
+                                android:textSize="40dp"
+                                android:layout_gravity="center"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txt_humi"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="3"
+                                android:gravity="right"
+                                android:text="HIMIDITY"
+                                android:textSize="30dp" />
+
+                            <TextView
+                                android:id="@+id/textView03"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:text="%"
+                                android:textSize="30dp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView011"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView03"
+                                android:layout_weight="3"
+                                android:gravity="right"
+                                android:layout_marginRight="15dp"
+                                android:text="희망 습도 : "
+                                android:textSize="20dp" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/w_humi"
+                                android:layout_width="0dp"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="wishhumi"
+                                android:textColor="#000000"
+                                android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:gravity="left"
+                                    android:layout_weight="2"
+                                    android:layout_height="wrap_content"
+                                    android:text="%"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp" />
+
+
+                                </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:id="@+id/img_result2"/>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:layout_height="match_parent"
+                                android:id="@+id/txt_result2"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="20dp"
+                                android:text="결과2"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Dust"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="2">
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/i_dust" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+                            <TextView
+                                android:id="@+id/textView22"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="TEMPERATURE"
+                                android:textSize="40dp"
+                                android:layout_gravity="center"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txt_dust"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="3"
+                                android:gravity="right"
+                                android:text="FINE DUST"
+                                android:textSize="30dp" />
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:text="㎍/m³"
+                                android:textSize="30dp" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView211"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/textView3"
+                                android:layout_weight="3"
+                                android:gravity="right"
+                                android:layout_marginRight="15dp"
+                                android:text="희망 미세먼지 농도 : "
+                                android:textSize="20dp" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/w_dust"
+                                android:layout_width="0dp"
+                                android:gravity="left"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="wishtemp"
+                                android:textColor="#000000"
+                                android:textSize="20dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:gravity="left"
+                                    android:layout_weight="2"
+                                    android:layout_height="wrap_content"
+                                    android:text="㎍/m³"
+                                    android:textColor="#000000"
+                                    android:textSize="20dp" />
+
+                                </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:id="@+id/img_result3"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="3"
+                                android:layout_height="match_parent"
+                                android:id="@+id/txt_result3"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textSize="20dp"
+                                android:text="결과3"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+    </TabHost>
+
+</LinearLayout>
